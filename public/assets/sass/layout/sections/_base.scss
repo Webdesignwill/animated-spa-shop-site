@@ -1,0 +1,47 @@
+@import "main-menu";
+@import "app-content";
+@import "cookie-message";
+
+// @TODO: This could probably be removed completely. PageFactory is not adding loaderfadeout anymore.
+body {
+  // .loader-overlay {
+  //   z-index:999999999;
+  //   background-color:white;
+  //   position:static;
+  //   top:0;
+  //   right:0;
+  //   bottom:0;
+  //   left:0;
+  // }
+}
+
+body.loaderfadein {
+
+  // .loader-overlay {
+  //   position:fixed;
+  // }
+  //
+  // #app-content {
+  //   animation-name: loaderfadeout;
+  //   animation-duration: 0.45s;
+  // }
+  //
+  // &.loaderfadeout {
+  //   #app-content {
+  //     animation-name: loaderfadein;
+  //     animation-duration: 0.45s;
+  //   }
+  // }
+
+  // .loader-overlay {
+  //   animation-name: loaderfadein;
+  //   animation-duration: 0.45s;
+  // }
+
+  // &.loaderfadeout {
+  //   .loader-overlay {
+  //     animation-name: loaderfadeout;
+  //     animation-duration: 0.45s;
+  //   }
+  // }
+}

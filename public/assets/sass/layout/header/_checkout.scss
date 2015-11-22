@@ -1,0 +1,56 @@
+#header-checkout {
+
+  background: $white;
+  padding: 48px 0;
+
+  .checkout-row-2 {
+    margin-top: 24px;
+  }
+
+  img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    @include respond(desktop) {
+      width: 100%
+    }
+  }
+
+  h3, div.header-checkout-sizes, div.header-checkout-qty {
+    font-size: $fontSizeButton;
+    margin: 16px 0;
+  }
+
+  p {
+    font-size: $fontSizeButton;
+  }
+
+  div.header-checkout-sizes {
+    span {
+      border-left: 1px solid $textGrey;
+      padding: 0 8px 0 12px;
+      &:first-child {
+        padding-left: 0;
+        border: none;
+      }
+    }
+  }
+
+  a, button {
+    padding: 0;
+    font-size: $fontSizeHeader;
+
+    @include respond(mobile) {
+      margin-left: 15px;
+    }
+  }
+
+  #checkout-button-empty-cart {
+    font-size: $fontSizeText;
+    margin-top: 12px;
+  }
+
+  .checkout-total, .checkout-shipping {
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "small" : {
+    "chest" : "36 - 38 inch",
+    "body" : "28.5 - 29.5 inch",
+    "waist" : "30 - 32 inch",
+    "sleeve" : "32 - 33 inch"
+  },
+  "medium": {
+    "chest" : "38 - 40 inch",
+    "body" : "29.5 - 30.5 inch",
+    "waist" : "32 - 34 inch",
+    "sleeve" : "33 - 34 inch"
+  },
+  "large": {
+    "chest" : "40 - 42 inch",
+    "body" : "30 - 31 inch",
+    "waist" : "34 - 36 inch",
+    "sleeve" : "34 - 35 inch"
+  },
+  "extra-large": {
+    "chest" : "42 - 44 inch",
+    "body" : "31 - 32 inch",
+    "waist" : "36 - 38 inch",
+    "sleeve" : "35 - 36 inch"
+  }
+}

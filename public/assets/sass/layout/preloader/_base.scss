@@ -1,0 +1,15 @@
+.preloader {
+  @include respond(desktop) {
+    background: url('../img/cloudintro/vollebak-logo-homepage.jpg') center center;
+    background-size:cover;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:5000;
+  }
+  @include respond(mobile) {
+    display:none;
+  }
+}

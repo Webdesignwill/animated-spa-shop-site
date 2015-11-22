@@ -1,0 +1,331 @@
+/* Parallax opening page styles
+--------------------------------------------- */
+$perspective: 2000px;
+$perspective-origin: 50% 0%;
+$animdelay: 3s;
+$animduration: 7s;
+
+.main-menu.world {
+  animation-name: origin-movement;
+  animation-duration: $animduration;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  //animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-delay: $animdelay;
+
+  transform: translate3d(0, 0, 0);
+  height: 800px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: $perspective;
+  -webkit-overflow-scrolling: touch;
+  perspective: $perspective;
+  -moz-perspective: $perspective;
+  perspective-origin: $perspective-origin;
+  -webkit-perspective-origin: $perspective-origin;
+  -moz-perspective-origin: $perspective-origin;
+
+  > .main-menu-parallax > article {
+    background: url("../img/cloudintro/c2.png") no-repeat center top fixed;
+    background-size: cover;
+  }
+
+  > * {
+    position: relative;
+    height: 100%;
+    backface-visibility: hidden;
+
+    &.cookie {
+      transform: translate3d(0, -110%, 0);
+      backface-visibility: hidden;
+      z-index: 999999;
+    }
+  }
+}
+
+.no-parallax {
+  .main-menu.world {
+    > * {
+      &.cookie {
+        transform: translate3d(0, -10%, 0);
+      }
+    }
+  }
+}
+
+.world__section {
+  position: relative;
+  height: 800px; /* fallback for older browsers */
+  height: 100vh;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+  transform-origin: top right;
+}
+
+.world__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-size: cover !important;
+}
+
+$moveTop: -85%;
+
+.world__layer--10 {
+  background: url('../img/cloudintro/c10.png') no-repeat center 165px fixed;
+  transform: translate3d(0, 0px, 496px);
+  background-size: cover;
+
+  .move-up & {
+    transform: translate3d(0, 0px, 499px);
+  }
+}
+
+@media all and (orientation:landscape) {
+  .world__layer--10 {
+    transform: translate3d(0, 0px, 500px);
+  }
+}
+
+.world__layer--8 {
+  background: url('../img/cloudintro/c8.png') no-repeat center top fixed;
+  transform: translate3d(0, 0px, 420px);
+  background-size: cover;
+
+
+  .move-up & {
+  }
+}
+
+.world__layer--7 {
+  background: url('../img/cloudintro/c7.png') no-repeat center top fixed;
+  transform: translate3d(0, 0, 390px);
+  background-size: cover;
+
+}
+
+.world__layer--6 {
+  background: url('../img/cloudintro/c6.png') no-repeat center top fixed;
+  transform: translate3d(0, 0px, 211px);
+  background-size: cover;
+
+  .move-up & {
+  }
+}
+
+.world__layer--5 {
+  background: url('../img/cloudintro/c5.png') no-repeat center top fixed;
+  transform: translate3d(0, 0, 188px);
+  background-size: cover;
+
+  .move-up & {
+  }
+}
+
+.world__layer--4 {
+  background: url('../img/cloudintro/c4.png') no-repeat center top fixed;
+  transform: translate3d(0, 0, 30px);
+  background-size: cover;
+
+  .move-up & {
+  }
+}
+.world__layer--3 {
+  background: url('../img/cloudintro/c2.png') no-repeat center top fixed;
+  transform: translate3d(0, 0, 0px);
+  background-size: cover;
+}
+
+.world__layer--2 {
+  background: url('../img/cloudintro/c1.png') no-repeat center top fixed;
+  transform: translate3d(0, 0, 0px);
+  background-size: cover;
+}
+
+.intro-logo {
+  animation-name: fade-in;
+  animation-duration: $animduration;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: $animdelay;
+  background: url("../img/cloudintro/LOGO.png") no-repeat center center;
+  opacity: 0;
+  width: 100%;
+  transform: translate3d(0%, -30%, 500px);
+  position: fixed;
+  top: 50%;
+  text-align: center;
+  height: 350px;
+  background-size: cover;
+  transform-origin: 50% 50%;
+}
+
+.intro-logo-text {
+   animation-name: fade-in;
+   animation-duration: $animduration - .5s;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-in;
+   animation-fill-mode: forwards;
+   animation-delay: $animdelay;
+   background: url("../img/cloudintro/LOGO-text.png") no-repeat center center;
+   opacity: 0;
+   width: 100%;
+   transform: translate3d(3px, -14%, 498px);
+   position: fixed;
+   top: 50%;
+   text-align: center;
+   height: 350px;
+   background-size: contain;
+   transform-origin: 50% 50%;
+
+  .move-up & {
+    opacity: .6;
+  }
+ }
+
+
+.main-menu-container {
+  h3, p {
+    opacity: 0;
+    transition: opacity 2s ease-out;
+  }
+
+  h3 {
+    transition-delay: 3s;
+  }
+
+  p {
+    transition-delay: 3500ms;
+  }
+
+  @include respond(mobile) {
+    text-align:center;
+    h3, p {
+      opacity: 1;
+    }
+  }
+}
+
+.no-parallax {
+  .main-menu-container {
+    h3, p {
+      opacity: 1;
+    }
+  }
+}
+
+.move-up {
+  animation-name: move-up;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.move-up2 {
+  animation-name: move-up2;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+
+  .main-menu-container {
+    animation-name: move-down;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
+    h3, p {
+      opacity: 1;
+    }
+
+  }
+}
+
+.debug {
+  .world__section {
+    transform: translate3d(-100px, 0, -800px) rotateY(30deg);
+  }
+
+  .world__layer {
+    box-shadow: 0 0 0 2px #000;
+    opacity: 0.9;
+  }
+}
+
+@keyframes move-up {
+  0%   {
+    transform: translate3d(0, 0, 450px);
+  }
+  100% {
+    transform: translate3d(0, -85%, 450px);
+  }
+}
+
+@keyframes move-up2 {
+  0%   {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes move-down {
+  0%   {
+    transform: translate3d(0, -150%, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+@keyframes move-down-logo {
+  0%   {
+    transform: translate3d(0%, -30%, 500px);
+  }
+  100% {
+    transform: translate3d(0%, 100%, 500px);
+  }
+}
+@keyframes move-down-logo-text {
+  0%   {
+    transform: translate3d(3px, -14%, 498px);
+  }
+  100% {
+    transform: translate3d(0%, 114%, 500px);
+  }
+}
+
+@keyframes origin-movement {
+  0%   {
+    perspective-origin: $perspective-origin;
+  }
+  40% {
+    perspective-origin: $perspective-origin;
+  }
+  100% {
+    perspective-origin: 50% 85%;
+  }
+}
+
+@keyframes fade-in {
+  0%   {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

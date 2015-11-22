@@ -1,0 +1,227 @@
+[
+  {
+    "Name": "Argentina",
+    "Code": "AR"
+  },
+  {
+    "Name": "Australia",
+    "Code": "AU"
+  },
+  {
+    "Name": "Austria",
+    "Code": "AT"
+  },
+  {
+    "Name": "Belgium",
+    "Code": "BE",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Brazil",
+    "Code": "BR"
+  },
+  {
+    "Name": "Canada",
+    "Code": "CA"
+  },
+  {
+    "Name": "China",
+    "Code": "CN"
+  },
+  {
+    "Name": "Costa Rica",
+    "Code": "CR"
+  },
+  {
+    "Name": "Croatia",
+    "Code": "HR"
+  },
+  {
+    "Name": "Czech Republic",
+    "Code": "CZ"
+  },
+  {
+    "Name": "Denmark",
+    "Code": "DK"
+  },
+  {
+    "Name": "Egypt",
+    "Code": "EG"
+  },
+  {
+    "Name": "Finland",
+    "Code": "FI",
+    "currency": "EEE"
+  },
+  {
+    "Name": "France",
+    "Code": "FR",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Germany",
+    "Code": "DE",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Greece",
+    "Code": "GR",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Greenland",
+    "Code": "GL"
+  },
+  {
+    "Name": "Hong Kong",
+    "Code": "HK"
+  },
+  {
+    "Name": "Hungary",
+    "Code": "HU"
+  },
+  {
+    "Name": "Iceland",
+    "Code": "IS"
+  },
+  {
+    "Name": "Indonesia",
+    "Code": "ID"
+  },
+  {
+    "Name": "Ireland",
+    "Code": "IE",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Israel",
+    "Code": "IL"
+  },
+  {
+    "Name": "Italy",
+    "Code": "IT",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Japan",
+    "Code": "JP"
+  },
+  {
+    "Name": "Liechtenstein",
+    "Code": "LI"
+  },
+  {
+    "Name": "Lithuania",
+    "Code": "LT",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Luxembourg",
+    "Code": "LU",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Malaysia",
+    "Code": "MY"
+  },
+  {
+    "Name": "Malta",
+    "Code": "MT",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Mexico",
+    "Code": "MX"
+  },
+  {
+    "Name": "Monaco",
+    "Code": "MC",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Morocco",
+    "Code": "MA"
+  },
+  {
+    "Name": "Netherlands",
+    "Code": "NL",
+    "currency": "EEE"
+  },
+  {
+    "Name": "New Zealand",
+    "Code": "NZ"
+  },
+  {
+    "Name": "Norway",
+    "Code": "NO"
+  },
+  {
+    "Name": "Poland",
+    "Code": "PL"
+  },
+  {
+    "Name": "Portugal",
+    "Code": "PT",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Romania",
+    "Code": "RO"
+  },
+  {
+    "Name": "Russian Federation",
+    "Code": "RU"
+  },
+  {
+    "Name": "Singapore",
+    "Code": "SG"
+  },
+  {
+    "Name": "South Africa",
+    "Code": "ZA"
+  },
+  {
+    "Name": "South Korea",
+    "Code": "KR"
+  },
+  {
+    "Name": "Spain",
+    "Code": "ES",
+    "currency": "EEE"
+  },
+  {
+    "Name": "Sweden",
+    "Code": "SE"
+  },
+  {
+    "Name": "Switzerland",
+    "Code": "CH"
+  },
+  {
+    "Name": "Taiwan",
+    "Code": "TW"
+  },
+  {
+    "Name": "Thailand",
+    "Code": "TH"
+  },
+  {
+    "Name": "Turkey",
+    "Code": "TR"
+  },
+  {
+    "Name": "United Arab Emirates",
+    "Code": "AE"
+  },
+  {
+    "Name": "United Kingdom",
+    "Code": "GB",
+    "currency": "GBP"
+  },
+  {
+    "Name": "United States",
+    "Code": "US",
+    "currency": "UUU"
+
+  }
+]

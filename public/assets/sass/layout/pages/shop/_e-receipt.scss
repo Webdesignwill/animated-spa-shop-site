@@ -1,0 +1,29 @@
+#e-receipt-page {
+  background-image: url('../img/pages/shop/bmp buying image 1 72 dpi.jpg');
+  background-position: 50% 0%;
+
+  @include respond(mobile) {
+    background: $lightGrey;
+  }
+
+  .shop-e-receipt-text {
+    padding-top: 124px;
+
+    @include respond(desktop) {
+      color: $white;
+    }
+    p {
+      margin: 0;
+    }
+    div {
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+    .shop-e-reciept-price {
+      &:before {
+        content: ">";
+      }
+    }
+  }
+}
+

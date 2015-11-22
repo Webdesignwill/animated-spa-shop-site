@@ -1,0 +1,38 @@
+
+// Colours
+$textGrey: rgb(82,83,82); // #525352
+$bakerMillerPink: #f38baa;
+$white: #fff;
+$black: #000;
+$lightGrey: #ddd;
+
+// Fonts
+$quicksand : 'Quicksand', sans-serif;
+
+// Font-sizes and weights
+$fontSizeSmall: 11px;
+$fontSizeText: 14px;
+$fontSizeMenu: 16px;
+$fontSizeButton: 17px;
+$fontSizeHeader: 26px; 
+$fontSizeMenuLarge: 28px;
+$fontSizeHeaderLarge: 48px;
+
+$fontWeightNormal: normal;
+$fontWeightLighter: lighter;
+$fontWeightBold: bold;
+
+// @TODO: remove eventually (still used in _philosophy.scss)
+$medium-screen : $screen-sm-min;
+$large-screen : $screen-lg-min;
+
+// Z-indexes
+$appContentZindex: 1000;
+$headerZindex: 2000;
+$sidebarZindex: 2050;
+
+// Section specific
+$headerHeight: 60px;
+
+// Paddings
+$cellPadding: 10%;

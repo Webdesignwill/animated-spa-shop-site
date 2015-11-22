@@ -1,0 +1,32 @@
+#shop-page {
+
+  .container {
+    width: 100%;
+  }
+
+  a {
+    font-size: $fontSizeHeader;
+    font-weight: $fontWeightNormal;
+  }
+
+  @include respond(desktop) {
+    overflow: hidden;
+    background-image: url('../img/pages/shop/buying face off 72 dpi.jpg');
+    background-position: 50% 0%;
+  }
+
+  @include respond(mobile) {
+    .col-sm-6 {
+      height: $shopHeight;
+      background-size: cover;
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      &#shop-index-condition-black {
+        background-image: url('../img/pages/shop/mobile/cb-landing-image-mobile.jpg');
+      }
+      &#shop-index-baker-miller {
+        background-image: url('../img/pages/shop/mobile/bmp-landing-image-mobile.jpg');
+      }
+    }
+  }
+}

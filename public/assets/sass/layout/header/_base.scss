@@ -1,0 +1,73 @@
+@import "checkout";
+
+#primary-header {
+
+  .shop-button-container {
+    margin-left:15px;
+  }
+
+  .cart-button-container {
+    margin-right:15px;
+  }
+
+  position:fixed;
+  right:0;
+  left:0;
+  top:0;
+  z-index: $headerZindex;
+  font-size: $fontSizeMenu;
+
+  @include respond(desktop) {
+    @include transition(transform, 0.3s);
+    transform: translate3d(0, 0px, 0);
+  }
+
+  .header-header {
+    height: $headerHeight;
+    background-color : $white;
+    padding-top: 20px;
+  }
+
+  .variable-text {
+    text-transform: lowercase;
+    width: 300px;
+    overflow: visible;
+    margin: 0 auto;
+    @media (max-width: 300px) {
+      display: none;
+    }
+  }
+
+  .header-border-left {
+    border-left: solid 1px grey;
+    margin-left: 16px;
+    padding-left: 16px;
+  }
+
+  .toggle-home {
+    &.swap-content {
+      content: "home";
+    }
+  }
+
+}
+
+body.intro {
+  #primary-header {
+    @include respond(desktop) {
+      transform: translate3d(0, -100px, 0);
+    }
+  }
+}
+
+body.cart-open {
+  @include respond(mobile) {
+    #primary-header {
+      height: 100%;
+      #header-checkout {
+        height: calc(100% - 60px);
+        overflow: scroll;
+      }
+    }
+  }
+}

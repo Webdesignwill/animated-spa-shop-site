@@ -1,0 +1,29 @@
+
+// @TODO: Move to partials
+
+#shop-gallery {
+
+  height: $shopHeight;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include respond (desktop) {
+    background: none !important;
+  }
+
+  .gallery-button-next {
+    float: right;
+    @include respond(desktop) {
+      right: -19px;
+    }
+  }
+
+  .gallery-button-prev, .gallery-button-next {
+    color: $white;
+    position: relative;
+    top: $shopHeight / 2;
+    @include respond(desktop) {
+      top: $shopHeight / 2 + 40;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+#modal {
+  z-index:100000;
+  .modal-dialog {
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    margin: 24px;
+    .modal-content {
+      height:100%;
+      box-shadow: none;
+      border-radius: 0;
+      border: none;
+      button.close {
+        position: absolute;
+        z-index: 200000;
+        color: white;
+        opacity: 1;
+        right: 10px;
+        top: 10px; 
+        span {
+          color: $textGrey;
+          font-size: 3rem;
+          position: relative;
+          top: -5px;
+        }
+      }
+      .modal-body {
+        padding:5px;
+        padding:0;
+        height:100%;
+        iframe {
+          border:none;
+        }
+      }
+    }
+  }
+}

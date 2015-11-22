@@ -1,0 +1,209 @@
+#main-menu {
+  position: relative;
+
+  background-image: url('../img/placeholders/background.jpg');
+  background-size: cover;
+  background-position: center bottom;
+
+  @include respond(mobile) {
+    background-image: url('../img/placeholders/mobile-valleys.jpg');
+  }
+
+  .main-menu-navigation {
+    z-index: -1;
+  }
+
+  @include respond(mobile) {
+    min-height: 100%;
+
+    .main-menu-navigation {
+      min-height: calc(100% - 40px);
+    }
+  }
+
+  article {
+    min-height: 100%;
+    @include respond(desktop) {
+      height: 100%;
+    }
+  }
+
+  &.world {
+    height : 100%;
+    position : relative;
+    overflow:hidden;
+
+    .main-menu-background {
+      background-image: url(../img/placeholders/7.png), url(../img/placeholders/4.png), url(../img/placeholders/background.jpg);
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: center bottom, center bottom, center bottom;
+      background-size: cover;
+      height: 110%;
+      width: 120%;
+      position: absolute;
+      top: -10px;
+      left: -10%;
+    }
+
+    .main-menu-background--secondary {
+      background-image: url(../img/placeholders/6.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      height: 110%;
+      width: 120%;
+      position: absolute;
+      top: -15px;
+      left: -10%;
+    }
+
+    .main-menu-background--tertiary {
+      background-image: url(../img/placeholders/5.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      height: 105%;
+      width: 120%;
+      position: absolute;
+      top: -10px;
+      left: -5%;
+    }
+  }
+
+  @media (max-width: $screen-xs-min) {
+    &.world {
+      // @TODO: Maybe comment this in again. Why is this here??
+      //height : 165%;
+    }
+  }
+
+  .main-menu-container {
+    position: relative;
+    height: 100%;
+    top: 5%;
+    @include respond(mobile) {
+      padding-top: 90px;
+      padding-bottom: 3rem;
+    }
+    @include respond(desktop) {
+      top: 50%;
+      height: 55%;
+      transform: translateY(-50%);
+    }
+
+
+    .row {
+
+      @include respond(desktop) {
+        height: 100%;
+      }
+      // show horizontal and vertical line in center
+      .menu-col-border {
+        @include respond(mobile) {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          margin: 0 auto;
+          width: 100%;
+        }
+        @include respond(desktop) {
+          float: left;
+          position: relative;
+          width: 1px;
+
+          margin: 0 auto;
+          width: auto;
+        }
+        &:after {
+          content: "";
+          display: block;
+          @include respond(mobile) {
+            margin-left: 5px;
+            border-bottom: 1px solid $white;
+            height: 0;
+            max-width: 208px;
+            margin:0 auto;
+          }
+          @include respond(desktop) {
+            border-right: 1px solid $white;
+            width: 1px;
+            position: absolute;
+            height: 370px;
+            right: 30px;
+          }
+        }
+      }
+      .menu-col {
+        height:auto;
+        @include respond(desktop) {
+          position: relative;
+          height: 55%;
+          min-height: 350px;
+        }
+        h3 {
+          font-weight: 200;
+          color: white;
+          font-size: 2.8rem;
+          margin-bottom:28px;
+          @include respond(desktop) {
+            margin-bottom: 48px;
+          }
+        }
+        p {
+          color: white;
+          font-size: 1.7rem;
+          font-weight: 100;
+          margin-bottom: 24px;
+          @include respond(mobile) {
+            margin-bottom: 1.8rem;
+          }
+          a {
+            font-size: 2rem;
+            color: white;
+            &:hover {
+              text-decoration: none;
+              color: darken(white, 10%);
+            }
+          }
+        }
+        .abstract-text {
+          font-size: 1.5rem;
+          display: block;
+          padding-top: 45px;
+        }
+      }
+      @include respond(desktop) {
+        .menu-col-left {
+          .menu-col-inner {
+            width: 305px;
+            float: right;
+            margin-right: 12px;
+          }
+        }
+        .menu-col-right {
+          .menu-col-inner {
+            width: 300px;
+            margin-left: 82px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #main-menu {
+    height: 100%;
+  }
+}
+
+body {
+  &.intro {
+    #main-menu {
+      &.world {
+        @include respond(desktop) {
+          // padding-top: 0;
+        }
+      }
+    }
+  }
+}

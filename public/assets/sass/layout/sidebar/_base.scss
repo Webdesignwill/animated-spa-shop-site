@@ -1,0 +1,156 @@
+#primary-sidebar {
+  $height: 550px;
+  min-height: $height;
+  @include transition(width, 0.45s);
+  position: fixed;
+  right: 0;
+  width:0;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  z-index: $sidebarZindex;
+
+  @media (max-height: $height) {
+    min-height: 0;
+    .side-menu {
+      margin-top: 70px !important;
+      li a {
+        padding-top: 0 !important;
+        padding-bottom: 10px;
+      }
+    }
+    .small {
+      position: static !important;
+    }
+  }
+
+  .small {
+    text-align: center;
+    margin-top: 24px;
+    @include respond(mobile) {
+      margin-top: 5px;
+    }
+    @include respond(desktop) {
+      text-align: left;
+      text-indent: 50px;
+    }
+    a {
+      color:$textGrey;
+      &:hover {
+        text-decoration:none;
+        color:darken($textGrey, 10%);
+      }
+    }
+  }
+  .close {
+    display:none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    z-index:100000;
+  }
+  .side-menu {
+
+    margin-top:100px;
+    @include respond(mobile) {
+      margin-top:15px;
+    }
+
+    @include transition(all, 0.3s);
+
+    a {
+      @include transition(margin, 0.3s);
+      color:$textGrey;
+      margin-left:0;
+      font-size: $fontSizeMenuLarge;
+
+      padding: 15px 0;
+      text-align: center;
+      @include respond(desktop) {
+        padding: 15px 0 15px 50px;
+        text-align: left;
+      }
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+        color:darken($textGrey, 10%);
+        background-color:white;
+      }
+      &:hover, .active {
+        margin-left:6px;
+      }
+    }
+    li {
+      ul {
+        @include transition(height, 0.4s);
+        height:0;
+        overflow:hidden;
+        list-style:none;
+        padding-left: 0;
+        @include respond(desktop) {
+          padding-left:70px;
+        }
+        li {
+          &.nested {
+            @include transition(opacity, 1s);
+            opacity:0;
+          }
+          a {
+            padding:10px 0;
+            display: block;
+          }
+        }
+      }
+      &.expanded {
+        ul {
+          // needs to be hardcoded cause transitions don't work with auto
+          height: 122px;
+        }
+      }
+      &.show-sub {
+        li.nested {
+          opacity:1;
+        }
+      }
+    }
+  }
+}
+body.sidebar-open {
+
+  @include respond(mobile) {
+    overflow:hidden;
+  }
+
+  #primary-sidebar {
+    width: 100%;
+    @include respond(desktop) {
+      width: 325px;
+    }
+    @include respond(mobile) {
+      overflow-y:scroll;
+    }
+    .close {
+      display: block;
+    }
+  }
+}
+
+
+
+// move all content to the left
+#app-content, #main-menu, #cookie-message {
+  left: 0;
+  @include transition(left, 0.45s);
+  &.page-changing {
+    @include transition(none);
+  }
+}
+body.sidebar-open {
+  #app-content, #main-menu, #cookie-message {
+    left: -100%;
+    @include respond(desktop) {
+      left: -325px;
+    }
+  }
+}

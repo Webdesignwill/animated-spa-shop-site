@@ -1,0 +1,336 @@
+#baker-miller-hoodie-page,
+#condition-black-jacket-page {
+
+  .buy-share {
+    font-size:2rem;
+  }
+
+  .img-responsive {
+    width: 100%;
+  }
+
+  .force-margin-top {
+    @include respond(mobile) {
+      margin-top:80px;
+    }
+  }
+
+  .reduced-margin-bottom {
+    margin-bottom:20px !important;
+    h2 {
+      margin-bottom:0;
+    }
+  }
+
+  .pink-snow-rotated {
+    padding-right: 0;
+
+    img {
+      float: right;
+      height: auto;
+      width: 50%;
+      margin-top: -9%;
+    }
+  }
+
+  .discovery {
+    margin-top: 5%;
+  }
+
+  padding-bottom: 0;
+
+  .top-40 {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .container {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 3rem;
+    margin: 0 0 2.4rem;
+  }
+
+  p.introduction {
+    font-size:2.7rem;
+    line-height:3.6rem;
+    width:auto;
+  }
+
+  h2 {
+    font-size: 2.9rem;
+    line-height: 3rem;
+    font-weight: 200;
+    margin: 0 0 6rem;
+  }
+
+  @media (min-width: $screen-md-min) {
+    .left-padded {
+      padding-left: $cellPadding;
+      padding-right: $cellPadding / 2;
+    }
+
+    .right-padded {
+      padding-right: $cellPadding;
+      padding-left: $cellPadding / 2;
+    }
+  }
+
+  .credits {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -30px;
+    color: $bakerMillerPink;
+  }
+
+  .inverted {
+    color: #ffffff;
+  }
+  .relative {
+    position: relative;
+  }
+
+  .diamond {
+    background-color: $bakerMillerPink;
+    margin: 100px auto 0 auto;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  @media (max-width: $screen-sm-min) {
+    .diamond {
+      margin: 0 auto 60px auto;
+    }
+  }
+
+  .row {
+    margin-bottom: 40px;
+    height: auto;
+
+    &.article-header {
+      position: relative;
+      margin-bottom: 0;
+      @include respond(mobile) {
+        padding-bottom: 100px;
+      }
+    }
+
+    > div[class^="col-"], div[class*=" col-"] {
+      margin-bottom: 40px;
+    }
+
+    &.no-margin {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $medium-screen) {
+    .row {
+      > div[class^="col-"], div[class*=" col-"] {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs-min) {
+    .row {
+      > div[class^="col-"], div[class*=" col-"] {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .img {
+    background: none no-repeat center;
+    height: 800px;
+
+    &.h-300 {
+      height: 300px;
+    }
+    &.h-400 {
+      height: 400px;
+    }
+    &.h-600 {
+      height: 600px;
+    }
+    &.h-700 {
+      height: 700px;
+    }
+
+    &.cb-mountain-night-bg {
+      background-image: url('../img/pages/condition-black-jacket/mounatin-blue-yellower.jpg');
+    }
+    &.bmp-nasa-river-bg {
+      background-image: url('../img/pages/baker-miller-hoodie/nasa-river.jpg');
+    }
+
+  }
+  @media (max-width: $medium-screen) {
+    .img {
+
+      &.h-300 {
+        height: 150px;
+      }
+      &.h-400 {
+        height: 200px;
+      }
+      &.h-600 {
+        height: 300px;
+      }
+      &.h-700 {
+        height: 350px;
+      }
+
+      &.cb-mountain-night-bg {
+        background-image: url('../img/pages/condition-black-jacket/mounatin-blue-yellower.jpg');
+        @include respond(mobile) {
+          background-position-x: -100px;
+        }
+        @media (min-width: $screen-sm-min) {
+          .container {
+            background-position-x: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $screen-sm-min) {
+    .img {
+      &.h-200 {
+        height: 200px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    .pull-cords {
+      padding-top: 200px;
+    }
+
+    .top-200 {
+      padding-top: 200px;
+    }
+
+    .img {
+      &.h-1100 {
+        height: 1100px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .img {
+      background-size: cover;
+    }
+  }
+
+  .img-responsive {
+    margin: 0 auto;
+  }
+
+  .full-width-mobile {
+    @include respond(mobile) {
+      width:100%;
+    }
+  }
+
+  header {
+    position: relative;
+
+    @media (max-width: $screen-sm-min) {
+      &.img {
+        background-size: cover;
+        height: 100%;
+      }
+    }
+
+    h1 {
+      font-size: 4.8rem;
+      line-height: 6rem;
+      font-weight: 100;
+    }
+
+    @media (min-width: $screen-md-min) {
+      h1 {
+        margin-top: 350px;
+        margin-bottom: 50px;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      h1 {
+        margin-top: 150px;
+        margin-bottom: 50px;
+      }
+    }
+
+    @media (max-width: $screen-xs-min) {
+      h1 {
+        margin-top: 150px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.9rem;
+      margin-bottom: 90px;
+      @include respond(mobile) {
+        margin-bottom: 40px;
+      }
+    }
+
+    @include respond(mobile) {
+      h1 {
+        margin-bottom: 90px;
+      }
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 1.9rem;
+      color: inherit;
+      text-decoration: none;
+      @include respond(mobile) {
+
+      }
+    }
+
+    @media (min-width: $screen-md-min) {
+
+    }
+  }
+}
+
+#baker-miller-hoodie-page {
+  .credits {
+    color: $bakerMillerPink;
+  }
+}
+
+#condition-black-jacket-page {
+  .creds-container {
+    margin-top: 40px;
+    margin-bottom: 0 !important;
+  }
+  .credits {
+    &.top-creds {
+      margin-top: 0;
+      margin-bottom: 0 !important;
+    }
+    color: #a5a5a5;
+    @media (max-width: $screen-sm-min) {
+      &.nasa {
+        margin-top: 20px;
+      }
+    }
+  }
+}

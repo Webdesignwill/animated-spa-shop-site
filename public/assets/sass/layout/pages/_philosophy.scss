@@ -1,0 +1,198 @@
+#philosophy-page,
+#service-page,
+#terms-page,
+#why-we-exist-page,
+#built-in-the-foothills-page,
+#mission-sack-page,
+#vollebak-press-page {
+
+  .credits {
+    margin-top:10px;
+    color: #a5a5a5;
+    &.top-creds {
+      margin-bottom: 0 !important;
+    }
+  }
+
+    .img-responsive {
+      width: 100%;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 200;
+      line-height: 3rem;
+      margin: 0 0 2.4rem;
+    }
+
+    h2 {
+      font-size: 2.9rem;
+      line-height: 3rem;
+      font-weight: 200;
+      margin: 0 0 6rem;
+    }
+
+    header {
+
+        text-align: center;
+
+        h2 {
+            margin: 4rem 0 4rem;
+        }
+        &.row {
+            margin:0;
+        }
+    }
+
+    blockquote{
+      font-size: 27px;
+      border: none;
+
+      footer{
+        margin-top:20px;
+      }
+    }
+
+    a.bordered {
+        border-bottom: solid 1px #000;
+        padding: 0 10px 40px;
+    }
+
+    .link-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        padding: 20px;
+        text-align:center;
+    }
+
+    .inline-quote {
+        position: relative;
+        // height: 800px;
+    }
+
+    .top-block {
+        position: relative;
+        height: 400px;
+
+        .link-box {
+            top: 65%;
+
+            h2 {
+                margin: 0 0 10rem;
+            }
+        }
+    }
+
+    @media (max-width: $medium-screen){
+       .top-block {
+            height: 200px;
+
+            .link-box {
+                top: 55%;
+                width:80%;
+
+                h2 {
+                     margin: 0 0 4rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $large-screen){
+        .inline-quote {
+            // height: 250px;
+            margin-top: 3rem;
+
+            .link-box {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                transform: translate(0%, 0%);
+                -webkit-transform: translate(0%, 0%);
+                padding: 0 30px;
+                text-align: center;
+            }
+        }
+    }
+
+    .row {
+        margin-bottom: 60px;
+
+        &.no-margin {
+            margin-bottom: 0;
+        }
+
+        &.text-center {
+            text-align:center;
+        }
+
+        .row {
+            margin-bottom:0;
+        }
+
+    }
+
+    @media (max-width: $medium-screen){
+        .row {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .margin-to-top {
+    //   margin-top:5%;
+    //   @media (max-width: $large-screen){
+    //     margin-top:20%;
+    //   }
+    // }
+
+    .img {
+        background: none no-repeat center;
+        height: 800px;
+        background-size: cover;
+
+        &.h-400 { height: 400px; }
+
+        //philosophy images
+        &.man-white-bg { background-image: url('../img/pages/philosophy/man-white-bg.jpg'); }
+        &.man-white-long-hair-bg { background-image: url('../img/pages/philosophy/man-white-long-hair-bg.png'); }
+        &.man-blue-hood-bg { background-image: url('../img/pages/philosophy/man-blue-hood-bg.jpg'); }
+        &.man-pink-sequence-bg { background-image: url('../img/pages/philosophy/hood-transform-series.jpg'); }
+        &.bag-bg-big { background-image: url('../img/pages/philosophy/dry-bag-big.jpg'); }
+        &.bag-bg { background-image: url('../img/pages/philosophy/dry-bag-final-new-background-72-dpi.png'); }
+        &.wonderland-bg { background-image: url('../img/pages/philosophy/wonderland.jpg'); }
+        &.wonderland-bg-big { background-image: url('../img/pages/philosophy/wonderland-big.jpg'); }
+        &.hill-blur-bg { background-image: url('../img/pages/philosophy/hill-blur.jpg'); }
+        &.steve-black-portrait-bg { background-image: url('../img/pages/philosophy/steve-black-portrait-72-dpi.jpg'); }
+        &.head-turn-landscape-bg { background-image: url('../img/pages/philosophy/bmp-head-turn-landscape-72-dpi.jpg'); }
+        &.chris-side-survival-bg { background-image: url('../img/pages/philosophy/chris-side-survival-yellower-72-dpi.jpg'); }
+        &.bmp-logo-lying-crop-bg { background-image: url('../img/pages/philosophy/bmp-logo-lying-crop-72-dpi.png'); }
+        &.cb-chris-close-up-bg { background-image: url('../img/pages/philosophy/cb-chris-close-up-2-72-dpi.jpg'); }
+        &.condition-black-all-shapes-bg { background-image: url('../img/pages/philosophy/condition-black-all-shapes.jpg'); }
+        &.bmp-side-crop-portrait-bg { background-image: url('../img/pages/philosophy/bmp-side-crop-portrait-72-dpi.jpg'); }
+        &.me-black-bg { background-image: url('../img/pages/philosophy/me-black-72-dpi.jpg'); }
+        &.PIA13605-bg { background-image: url('../img/pages/philosophy/PIA13605-1920x1200.jpg'); }
+        &.bmp-mad-head-bg { background-image: url('../img/pages/philosophy/bmp-mad-head-72-dpi.png'); }
+        &.condition-black-3-images-bg { background-image: url('../img/pages/philosophy/condition-black-3-images-side-front-detail-yellowwr-72-dpi.png'); }
+        &.ceraspace-yellower-for-petratex-bg { background-image: url('../img/pages/philosophy/ceraspace-yellower-for-petratex-72-dpi.jpg'); }
+        &.bags-bg { background-image: url('../img/pages/philosophy/4-bags.jpg'); }
+        &.mounatin-pyramid-bg { background-image: url('../img/pages/philosophy/mounatin-pyramid.jpg'); }
+        &.inverted-forest-crop-bg { background-image: url('../img/pages/philosophy/inverted-forest-crop.jpg'); }
+    }
+}
+
+
+.philosophy-anchor  {
+  @include respond(desktop) {
+    position: relative;
+    top: -60px;
+  }
+}
+
+#service-page {
+    h2 {
+        margin: 4rem 0 1rem;
+    }
+}

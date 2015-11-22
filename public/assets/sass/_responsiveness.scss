@@ -1,0 +1,24 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $screen-sm-min - 1) {
+      @content;
+    }
+  }
+  @else if $breakpoint == desktop {
+    @media (min-width: $screen-sm-min) {
+      @content;
+    }
+  }
+}
+
+.hidden-mobile {
+  @include respond(mobile) {
+    display : none !important;
+  }
+}
+
+.hidden-desktop {
+  @include respond(desktop) {
+    display : none !important;
+  }
+} 

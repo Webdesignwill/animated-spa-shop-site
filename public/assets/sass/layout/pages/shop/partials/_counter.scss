@@ -1,0 +1,13 @@
+.counter {
+  button {
+    width: 24px;
+    font-weight: $fontWeightNormal;
+    font-size: $fontSizeHeader;
+  }
+  span {
+    font-size: $fontSizeHeader;
+    font-weight: $fontWeightNormal;
+    display: inline-block;
+    width: 96px;
+  }
+}

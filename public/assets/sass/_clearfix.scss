@@ -1,0 +1,17 @@
+
+// @TODO: Can this be removed? Bootstrap also has this buildin via .clearfix.
+
+%clear {
+  content: ' ';
+  display: table;
+}
+.clear {
+  *zoom: 1;
+  &:before {
+    @extend %clear;
+  } 
+  &:after {
+    @extend %clear;
+    clear: both;
+  }
+}

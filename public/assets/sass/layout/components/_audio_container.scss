@@ -1,0 +1,32 @@
+.audio-container {
+  display: none;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 100000000;
+  background-color: black;
+  opacity: 0.8;
+  .inner {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 10px;
+    button.close {
+      position: absolute;
+      right: 15px;
+      top: 14px;
+      color: white;
+      opacity:1;
+    }
+  }
+}
+
+body {
+  &.audio-open {
+    .audio-container {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+#shop-condition-black-jacket-page, #shop-baker-miller-hoodie-page {
+
+  padding-bottom: 0;
+
+  background-position: 30% 0%;
+
+  @include respond(mobile) {
+    background-color: $lightGrey;
+    background-image: none !important;
+  }
+
+  .ul-selectable {
+    margin-top: 24px;
+    margin-bottom: 36px;
+    li {
+      a {
+        color: $textGrey;
+        padding: 0 16px;
+        font-size: $fontSizeHeader;
+        font-weight: $fontWeightNormal;
+        &.ul-selectable-selected {
+          color: $white;
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+
+  .shop-page-text {
+    padding-bottom: 3em;
+  }
+
+  .shop-button-wrapper {
+    button {
+      font-size: $fontSizeHeader;
+      @include respond(mobile) {
+        color: $textGrey;
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    .shop-page-text {
+      background: $lightGrey;
+    }
+  }
+}
+
+#shop-baker-miller-hoodie-page {
+  background-image: url('../img/pages/shop/bmp buying image 1 72 dpi.jpg');
+}
+
+#shop-condition-black-jacket-page {
+  background-image: url('../img/pages/shop/cb buying image 1 72 dpi.jpg');
+}

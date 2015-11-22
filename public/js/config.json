@@ -1,0 +1,191 @@
+{
+  "images" : {
+    "valley" : [
+      "/assets/img/placeholders/background.jpg",
+      "/assets/img/placeholders/5.png",
+      "/assets/img/placeholders/7.png",
+      "/assets/img/placeholders/6.png",
+      "/assets/img/placeholders/4.png"
+    ],
+    "product" : [
+      "/assets/img/pages/baker-miller-hoodie/nasa-river.jpg",
+      "/assets/img/pages/condition-black-jacket/mounatin-blue-yellower.jpg",
+      "/assets/img/pages/experiment/soundtrack-baker-miller-bg.jpg",
+      "/assets/img/pages/experiment/cb-cropped-bg.jpg",
+      "/assets/img/pages/shop/buying face off 72 dpi.jpg",
+      "/assets/img/pages/sizing/miller-pink-sizing.jpg",
+      "/assets/img/pages/sizing/condition-black-sizing.jpg"
+    ]
+  },
+  "pages" : [
+    {
+      "_id" : "03a8f5726f01f738b875218906f21583",
+      "header" : "",
+      "title" : "Home",
+      "name" : "home",
+      "path" : "home",
+      "page" : "DefaultPage",
+      "template" : "home",
+      "homepage" : true
+    },
+    {
+      "_id" : "bd4c6193457cbfeb9eee96b0814d331e",
+      "header" : "Shop",
+      "title" : "Shop",
+      "name" : "shop",
+      "path" : "shop",
+      "page" : "ShopIndexPage",
+      "template" : "shop/shop-index"
+    },
+    {
+      "_id" : "bd4c61f3457cbfeb9eee96b0814d331d",
+      "header" : "Sizing",
+      "title" : "Sizing",
+      "name" : "sizing",
+      "path" : "shop/sizing",
+      "page" : "ShopSizingPage",
+      "template" : "shop/shop-sizing"
+    },
+    {
+      "_id" : "bd4c6193457cbfeb9eeef6b0814d331d",
+      "header" : "Service",
+      "title" : "Service",
+      "name" : "service",
+      "path" : "shop/service",
+      "page" : "DefaultShopPage",
+      "template" : "shop/shop-service"
+    },
+    {
+      "_id" : "bd4c6193457cbfeb9eee96b0814d331d",
+      "header" : "Shipping",
+      "title" : "Shipping",
+      "name" : "shipping",
+      "path" : "shop/shipping",
+      "page" : "ShopShippingPage",
+      "template" : "shop/shop-shipping"
+    },
+    {
+      "_id" : "bf4c6193457cbfeb9eee96b0814d331d",
+      "header" : "Details",
+      "title" : "Details",
+      "name" : "details",
+      "path" : "shop/details",
+      "page" : "ShopDetailsPage",
+      "template" : "shop/shop-details"
+    },
+    {
+      "_id" : "bf4c6193457cbfeb9eee96b0814d331d",
+      "header" : "Waiting list",
+      "title" : "Waiting list",
+      "name" : "waiting-list",
+      "path" : "shop/waiting-list",
+      "page" : "ShopWaitingListPage",
+      "template" : "shop/shop-waiting-list"
+    },
+    {
+      "_id" : "bf4c6193457cbfeb9eee96b0814d331d",
+      "header" : "Order confirmation",
+      "title" : "E-receipt",
+      "name" : "e-receipt",
+      "path" : "shop/order-confirmation",
+      "page" : "ShopEReceiptPage",
+      "template" : "shop/shop-e-receipt"
+    },
+    {
+      "_id" : "bd4c6193457cbfeb9eee96b0814d331f",
+      "header" : "Shop",
+      "title" : "shop-baker-miller-hoodie",
+      "name" : "shop-baker-miller-hoodie",
+      "path" : "shop/baker-miller-hoodie",
+      "page" : "ShopPageMillerPink",
+      "template" : "shop/shop-page"
+    },
+    {
+      "_id" : "bf5b97e72052ff97f178be0d21a3b20f",
+      "header" : "Shop",
+      "title" : "shop-condition-black-jacket",
+      "name" : "shop-condition-black-jacket",
+      "path" : "shop/condition-black-jacket",
+      "page" : "ShopPageConditionBlack",
+      "template" : "shop/shop-page"
+    },
+    {
+      "_id" : "093f289991ede050ed5ee0bea6826034",
+      "header" : "Products",
+      "title" : "baker-miller-hoodie",
+      "name" : "baker-miller-hoodie",
+      "path" : "products/baker-miller-hoodie",
+      "page" : "ArticlePage",
+      "template" : "baker-miller-hoodie"
+    },
+    {
+      "_id" : "00383b063925aba7ac8c77a3c18068a9",
+      "header" : "Products",
+      "title" : "condition-black-jacket",
+      "name" : "condition-black-jacket",
+      "path" : "products/condition-black-jacket",
+      "page" : "ArticlePage",
+      "template" : "condition-black-jacket"
+    },
+    {
+      "_id" : "ca3c3fe5f14124d87a8f4766a2a8f319",
+      "header" : "Experiment",
+      "title" : "experiment-baker-miller",
+      "name" : "experiment-baker-miller",
+      "path" : "experiment/baker-miller",
+      "page" : "ExperimentPage",
+      "template" : "experiment-baker-miller"
+    },
+    {
+      "_id" : "07f1c69abade17ede0020963a1930bcc",
+      "header" : "Experiment",
+      "title" : "experiment-condition-black",
+      "name" : "experiment-condition-black",
+      "path" : "experiment/condition-black",
+      "page" : "ExperimentConditionBlackPage",
+      "template" : "experiment-condition-black"
+    },
+    {
+      "_id" : "b4b51134a6674f2e96d61a781240072b",
+      "header" : "Soundtrack",
+      "title" : "soundtrack-baker-miller",
+      "name" : "soundtrack-baker-miller",
+      "path" : "soundtrack/baker-miller",
+      "page" : "ArticlePage",
+      "template" : "soundtrack-baker-miller"
+    },
+    {
+      "_id" : "4de4ba5a785e69cf3ea3243521fe3ea4",
+      "header" : "Soundtrack",
+      "title" : "soundtrack-condition-black",
+      "name" : "soundtrack-condition-black",
+      "path" : "soundtrack/condition-black",
+      "page" : "ArticlePage",
+      "template" : "soundtrack-condition-black"
+    },
+    {
+      "_id" : "b4f6532b89223f6e5eb971e3ec9e7d6d",
+      "header" : "Philosophy",
+      "title" : "philosophy",
+      "name" : "philosophy",
+      "path" : "philosophy(/:page)",
+      "page" : "PhilosophyPage",
+      "template" : "philosophy"
+    },
+    {
+      "_id" : "5cbd0f6bf54aa579656f4ca030bb95a0",
+      "header" : "Terms",
+      "title" : "terms",
+      "name" : "terms",
+      "path" : "terms",
+      "page" : "DefaultPage",
+      "template" : "terms"
+    }
+  ],
+  "partials" : [
+    "cookieMessage",
+    "counter",
+    "checkout",
+    "share"
+  ]
+}

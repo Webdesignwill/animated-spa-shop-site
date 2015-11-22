@@ -1,0 +1,73 @@
+#sizing-page {
+
+  padding-top: 50px;
+
+  p {
+    line-height: 3rem;
+    margin: 0 0 2.4rem;
+    font-weight:200;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+    font-weight: 200;
+    margin: 0 0 4rem;
+  }
+
+  .sizing-row {
+    height:884px;
+    text-align:center;
+    position: relative;
+    .selectable-wrapper {
+      padding: 96px 0 60px
+    }
+    .ul-selectable {
+      position:relative;
+      top:10%;
+      margin-left:0;
+      li {
+        font-size: 3rem;
+        padding: 0;
+        width: 6%;
+        a {
+          // @TODO: Set in variables
+          color:darken(white, 12%);
+          &:hover, &:focus, &:active {
+            text-decoration:none;
+            color:white;
+          }
+        }
+      }
+    }
+    .sizing-columns {
+      color:white;
+      p {
+        font-size:1.6rem;
+        @include respond(mobile) {
+          font-size: $fontSizeSmall;
+          font-weight: $fontWeightBold;
+        }
+      }
+    }
+  }
+
+  .sizing-miller-pink {
+    margin: 36px 0px;
+    background: url('../img/pages/sizing/miller-pink-sizing.jpg') no-repeat center center;
+    background-size:cover;
+  }
+
+  .sizing-condition-black {
+    background: url('../img/pages/sizing/condition-black-sizing.jpg') no-repeat center center;
+    background-size:cover;
+  }
+
+  .go-back {
+    margin-top: 50px;
+    a {
+      font-weight:400;
+      color:black;
+    }
+  }
+}

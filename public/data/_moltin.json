@@ -1,0 +1,7 @@
+{
+  "account" : "test",
+  "publicId" : "1KVDbiiW5WysfzSlSFXA3A6EujNIIhOrRj2TAZE0",
+  "productIds" : ["1063788756714127700", "1063787466579771731"],
+  "gateway" : "stripe",
+  "waitingListGroupId" : "1076741622600827390"
+}

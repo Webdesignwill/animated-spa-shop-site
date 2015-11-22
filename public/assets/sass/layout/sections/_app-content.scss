@@ -1,0 +1,6 @@
+#app-content {
+  position: relative;
+  z-index: $appContentZindex;
+  background-color: white;
+  overflow: hidden;
+}

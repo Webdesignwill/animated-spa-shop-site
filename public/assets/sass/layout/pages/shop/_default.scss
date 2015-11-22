@@ -1,0 +1,74 @@
+
+$shopHeight: 450px;
+
+#shop-page, #shop-baker-miller-hoodie-page, #shop-condition-black-jacket-page, #shipping-page, #e-receipt-page {
+
+  min-height: $shopHeight;
+
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+
+  @include respond(desktop) {
+    background-position: 0% 0%;
+  }
+
+  h3.shop-price {
+    margin-top: 3em;
+    @include respond(mobile) {
+      margin-top: 2.2rem;
+    }
+  }
+
+  h3 {
+    margin-bottom: 1em;
+  }
+
+  a {
+    display: block;
+    margin-top: 15px;
+    font-size: $fontSizeButton;
+    font-weight: $fontWeightBold;
+  }
+
+  p {
+    // @TODO: Set size and weight to _defaults.scss
+    text-align: justify;
+    &.shop-description-text {
+      font-size:1.5rem;
+    }
+  }
+
+  #shop-page-preorder {
+    background: $white;
+    @include respond(desktop) {
+      margin-top: 60px;
+    }
+    h3 {
+      margin-top: 76px;
+    }
+    p {
+      margin-bottom: 76px;
+    }
+  }
+
+  .shop-button-wrapper {
+    margin-top: 32px;
+    min-height: 30px;
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  #shop-page {
+    color: #fff;
+  }
+}
+
+#terms-page {
+  ul {
+    li {
+      font-size: 2rem;
+      font-weight: 200;
+    }
+  }
+}

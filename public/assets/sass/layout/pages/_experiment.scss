@@ -1,0 +1,228 @@
+span.divider {
+  padding: 0 10px 0 5px;
+  font-size: 18px;
+}
+
+#experiment-baker-miller-page,
+#experiment-condition-black-page,
+#soundtrack-condition-black-page,
+#soundtrack-baker-miller-page {
+
+  video {
+    object-fit:cover;
+  }
+
+  .credits {
+    margin-top:10px;
+    color: #a5a5a5;
+    &.top-creds {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .left-padded {
+      padding-left: $cellPadding;
+      padding-right: $cellPadding / 2;
+    }
+
+    .right-padded {
+      padding-right: $cellPadding;
+      padding-left: $cellPadding / 2;
+    }
+  }
+
+  &.page {
+    padding-bottom : 0;
+  }
+
+  h1 {
+    line-height: 1.8em;
+    font-size: 48px;
+    font-weight: $fontWeightLighter;
+  }
+
+  @media (max-width: 768px) {
+    .margin-top-when-small {
+      margin-top:40px;
+    }
+  }
+  @media (max-width: 989px) {
+    .margin-top-when-small {
+      margin-top:40px;
+    }
+  }
+
+  .article-header {
+    height: 100%;
+    overflow: hidden;
+    .container {
+      padding-top: 150px;
+      @include respond(desktop) {
+        padding-top: 0;
+      }
+      .header-text-container {
+        //width: 400px;
+        margin: 0 auto;
+        position: relative;
+        top: 25%;
+        @include respond(mobile) {
+          padding-top: 0;
+        }
+      }
+    }
+    @media (min-width: $screen-sm-min) {
+      .container {
+        height: 100%;
+      }
+    }
+
+    .play-audio {
+      color:#fff;
+    }
+  }
+
+  .article-content {
+    .container {
+      .lead {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  .subheader p, h1, a.read-share {
+    color: $white;
+  }
+  a.read-share {
+    font-size: 18px;
+  }
+
+  .row.subheader {
+    margin-top: 35px;
+    margin-bottom: 100px;
+  }
+
+  .row.play {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    a {
+      font-size: 1.6em;
+    }
+  }
+
+  .img {
+    background: none no-repeat center;
+    background-size: cover;
+    height: 800px;
+
+    &.h-200 {
+      height: 200px;
+    }
+    &.h-300 {
+      height: 300px;
+    }
+    &.h-460 {
+      height: 460px;
+    }
+    &.h-500 {
+      height: 500px;
+    }
+    &.h-600 {
+      height: 600px;
+    }
+    &.h-700 {
+      height: 700px;
+    }
+
+    @media (max-width: 768px) {
+      &.puddle {
+        margin-bottom: 20px;
+      }
+    }
+
+    &.experiment-black-bg {
+      background-image: url('../img/pages/experiment/cb-cropped-bg.jpg');
+    }
+
+    &.soundtrack-baker-miller-bg {
+      background-image: url('../img/pages/experiment/soundtrack-baker-miller-bg.jpg');
+    }
+
+    .row.play {
+      a {
+        color: #525352;
+      }
+    }
+  }
+}
+
+#experiment-baker-miller-page,
+#experiment-condition-black-page {
+
+  .article-header {
+    canvas {
+      @include respond(mobile) {
+        display: none;
+      }
+    }
+    #canvas-baker-miller-pink {
+      width: 100%;
+      height: 100%;
+    }
+    #canvas-condition-black {
+      background-color: black;
+    }
+    .container {
+      @include respond(desktop) {
+        position: relative;
+        top: -100%;
+      }
+    }
+  }
+}
+
+#experiment-baker-miller-page {
+  background-color: #FF91AF;
+  color: #fff;
+
+  .article-content {
+    .container {
+      .lead {
+        color: $white;
+      }
+    }
+  }
+
+  .row.play {
+    a {
+      color: #fff;
+    }
+  }
+
+}
+
+#experiment-condition-black-page {
+  .header-text-container {
+    a {
+      transition: none;
+    }
+    &.inverted {
+      h1, p , a {
+        color: $black;
+      }
+    }
+  }
+}
+
+.row.content {
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    &.lead-top {
+       margin-top:65px;
+    }
+  }
+}

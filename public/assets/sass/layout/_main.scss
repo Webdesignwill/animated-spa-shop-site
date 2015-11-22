@@ -1,0 +1,23 @@
+
+@import "default";
+@import "body/base";
+@import "components/base";
+@import "footer/base";
+@import "preloader/base";
+@import "header/base";
+@import "pages/base";
+@import "sections/base";
+@import "forms/base";
+@import "sidebar/base";
+
+.m-t-35 {
+  @include respond(mobile) {
+    margin-top:5%;
+  }
+  @media (max-width: $medium-screen){
+    margin-top:5%;
+  }
+  @include respond(desktop) {
+    margin-top:30%;
+  }
+}

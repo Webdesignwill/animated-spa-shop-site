@@ -1,0 +1,50 @@
+#shipping-page {
+
+  background-image: url('../img/pages/shop/cb buying image 1 72 dpi.jpg');
+
+  @include respond(mobile) {
+    background-image: url('../img/pages/shop/mobile/cb-buying-image-1-72-dpi.jpg');
+  }
+
+  .shop-shipping-image {
+    min-height: $shopHeight;
+  }
+
+  .shop-shipping-text {
+    min-height: $shopHeight;
+    background: white;
+    h3 {
+      margin-top: 6rem;
+      margin-bottom: 48px;
+      font-size: 27px;
+      @include respond(desktop) {
+        margin-top: 12rem;
+      }
+    }
+    p {
+      font-size: 20px; 
+    }
+  }
+
+  ul {
+    margin: 0 0 48px;
+    padding: 0;
+    overflow: auto;
+    li {
+      list-style: none;
+      display: block;
+      float: left;
+      width: 25%;
+      border-left: 1px solid grey;
+      a {
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 4rem;
+        font-weight: normal;
+      }
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+}

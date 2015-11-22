@@ -1,0 +1,18 @@
+.chosen-container-single .chosen-single div b {
+  background-position: 0px 2px;
+}
+.chosen-container-single {
+  .chosen-single {
+    border:none;
+    box-shadow:none;
+  }
+  &.chosen-container-active {
+    .chosen-single {
+      border:none;
+      box-shadow:none;
+    }
+    .chosen-drop {
+      border:none;
+    }
+  }
+}

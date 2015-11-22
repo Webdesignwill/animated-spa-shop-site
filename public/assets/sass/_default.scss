@@ -1,0 +1,51 @@
+body {
+  // @TODO: Set correct here
+  //font-size: 62.5%;
+  line-height: 1.48;
+  font-family: $quicksand;
+  font-weight: normal;
+  font-style: normal;
+  color : $textGrey;
+}
+
+.image-credits {
+  margin-top:10px;
+  display:block;
+  color: #a5a5a5;
+}
+
+a {
+  color: $textGrey;
+  &:hover, &:active, &:focus {
+    text-decoration: none !important;
+    color: darken($textGrey, 30%);
+  }
+  @include transition(color, 0.3s);
+}
+
+// @TODO: Specify global size, font-weight, etc.
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+button {
+  font-size: $fontSizeButton;
+  border: none;
+  background: none;
+  outline: none;
+  &.disabled {
+    opacity: 0.4;
+  }
+}
+
+.text-light {
+  color: $white;
+  &:hover {
+    color: darken($white, 5%);
+  }
+}
