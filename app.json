@@ -1,0 +1,8 @@
+{
+  "name": "Vollebak",
+  "description": "Vollebak website",
+  "repository": "https://github.com/Webdesignwill/animated-spa-shop-site",
+  "logo": "",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
