@@ -1,0 +1,24 @@
+# Docker
+Dockerfile
+docker-compose.yml
+
+*.env
+*.dev
+.DS_Store
+*.pyc
+*.DS_Store
+/static/
+src/.cache/
+local.py
+src/htmlcov/
+*.coverage
+src/test_results.xml
+npm-debug.log
+node_modules
+*.log
+.sass-cache
+src/project/templates/project/index.html
+test_database
+media-testing/
+media/
+database/

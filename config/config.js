@@ -4,7 +4,7 @@ var path = require('path'),
 
 var config = {
   development : {
-    port : 5000,
+    port : 5050,
     root : rootPath
   },
   production : {
